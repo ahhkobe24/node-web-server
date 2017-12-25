@@ -28,15 +28,22 @@ app.get('/',(req,res)=>{
     
     res.render('home.hbs',{
         pageTitle: 'home page',
-        currentYear: new Date().getFullYear(),
         WelcomeMessage: 'Welcome to my website'
+    });
+});
+
+app.get('/projects',(req,res)=>{
+    
+    res.render('projects.hbs',{
+        pageTitle: 'projects page',
+        
     });
 });
 
 app.get('/about',(req,res)=>{
     res.render('about.hbs',{
         pageTitle: 'About page',
-        currentYear: new Date().getFullYear()
+        
     });
 });
 
